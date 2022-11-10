@@ -24,5 +24,25 @@ namespace LavoroDiGruppoMagFabMug
         {
             InitializeComponent();
         }
+
+        private void btnCrea_Click(object sender, RoutedEventArgs e)
+        {
+            lstCD.Items.Add(new Brano);
+            txtAutore.Text = autore;
+            txtTitolo.Text = titolo;
+            txtDurata.Text = durata;
+            txtNomeCD.Text = NomeCD;
+            txtAutoreCD.Text = AutoreCD;
+        }
+
+        private void lstCD_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void txtTitolo_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }

@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Button x:Name="btnCrea" Content="Crea Brano" HorizontalAlignment="Left" Margin="121,81,0,0" VerticalAlignment="Top" Height="68" Width="158" Click="btnCrea_Click"/>
+        <ListBox x:Name="lstCD" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="442,166,157,47" SelectionChanged="lstCD_SelectionChanged"/>
+        <TextBox x:Name="txtTitolo" HorizontalAlignment="Left" Margin="121,217,0,0" TextWrapping="Wrap" Text="Nome Brano" VerticalAlignment="Top" Width="120" TextChanged="txtTitolo_TextChanged"/>
+        <TextBox x:Name="txtAutore" HorizontalAlignment="Left" Margin="121,268,0,0" TextWrapping="Wrap" Text="Nome Autore&#xD;&#xA;" VerticalAlignment="Top" Width="120" Height="18"/>
+        <TextBox x:Name="txtDurata" HorizontalAlignment="Left" Margin="121,319,0,0" TextWrapping="Wrap" Text="Durata Brano" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNomeCD" HorizontalAlignment="Left" Margin="452,40,0,0" TextWrapping="Wrap" Text="Nome CD" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAutoreCD" HorizontalAlignment="Left" Margin="452,89,0,0" TextWrapping="Wrap" Text="Autore CD" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
